@@ -11,7 +11,7 @@
   <div>
     <form class="form">
       <div class="inputBox">
-        <input type="text" id="txt" placeholder="Insira sua tarefa" required>
+        <input id="txt" type="text" placeholder="Insira sua tarefa" required>
         <button id="btn-add">+</button>
       </div>
     </form>
