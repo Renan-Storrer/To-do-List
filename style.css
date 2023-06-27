@@ -74,7 +74,7 @@ body {
 }
 
 .wrapper #data li button {
-  background: #e74c3c;
+  background: #ff1900;
   color: white;
   border: none;
   border-radius: 0;
@@ -97,7 +97,7 @@ body {
 }
 
 .wrapper .footer button {
-  background: #e74c3c;
+  background: #ff1900;
   padding: 10px;
   border-radius: 3px;
   color: white;
@@ -108,5 +108,5 @@ body {
 }
 
 .wrapper .footer button:hover {
-  background: #c0392b;
+  background: #c92715;
 }
