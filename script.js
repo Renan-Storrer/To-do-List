@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  //função para ver as tarefas em aberto
   function showData() {
     $.ajax ({
       url: 'show.php',
@@ -10,6 +12,7 @@ $(document).ready(function(){
   }
   showData()
 
+  //função para ver quantidade de tarefas
   function totalTask() {
     $.ajax ({
       url: 'task.php',
@@ -21,6 +24,7 @@ $(document).ready(function(){
   }
   totalTask();
 
+  //função para botão de inserir tarefa
   $("#btn-add").on("click", function(e){
     e.preventDefault();
     txt = $("#txt").val();
@@ -39,6 +43,25 @@ $(document).ready(function(){
           console.log(result);
         }
       }
-    })
-  })
+    });
+  });
+
+  //função para botão de deletar tarefa específica 
+  $(document).on("click", "#delete", function(){
+    id = $(this).data("id");
+    element = $(this);
+
+    $.ajax({
+      url: 'delete.php',
+      type: 'post',
+      data: {id: id},
+      success: function(result) {
+        if (result == 1) {
+          $(element).closest("li").fadeOut();
+          showData();
+          totalTask();
+        }
+      }
+    });
+  });
 })
