@@ -64,4 +64,18 @@ $(document).ready(function(){
       }
     });
   });
+
+  // função para o botão de limpar(exlcuir todas as tarefas)
+  $(document).on("click", "#clear", function(){
+    $.ajax({
+      url: 'clear.php',
+      type: 'post',
+      success: function(result) {
+        if (result == 1) {
+          showData();
+          totalTask();
+        }
+      }
+    });
+  });
 })
