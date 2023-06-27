@@ -10,6 +10,17 @@ $(document).ready(function(){
   }
   showData()
 
+  function totalTask() {
+    $.ajax ({
+      url: 'task.php',
+      type: 'post',
+      success: function(result){
+        $("#total_task").html(result);
+      }
+    });
+  }
+  totalTask();
+
   $("#btn-add").on("click", function(e){
     e.preventDefault();
     txt = $("#txt").val();
