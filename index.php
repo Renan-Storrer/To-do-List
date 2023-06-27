@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="style.css">
   <title>Todo List | Renan Storrer</title>
 </head>
 <body>
-  <div>
+  <div class="wrapper">
     <form class="form">
       <div class="inputBox">
         <input id="txt" type="text" placeholder="Insira sua tarefa" required>
-        <button id="btn-add">+</button>
+        <button id="btn-add" class="fa fa-plus"></button>
       </div>
     </form>
-    <ul id="data">
+    <ul id="data" class="list-group">
 
     </ul>
     <div class="footer">
