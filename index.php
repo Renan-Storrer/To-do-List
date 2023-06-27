@@ -11,8 +11,8 @@
   <div>
     <form class="form">
       <div class="inputBox">
-        <input type="text" id="task" placeholder="Insira sua tarefa" required>
-        <button id="btn-remove-task">X</button>
+        <input type="text" id="txt" placeholder="Insira sua tarefa" required>
+        <button id="btn-add">+</button>
       </div>
     </form>
     <ul id="data">
@@ -24,5 +24,7 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
