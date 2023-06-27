@@ -34,6 +34,7 @@ $(document).ready(function(){
           txt = $("#txt").val('');
           alert("Tarefa adicionada com sucesso.");
           showData()
+          totalTask()
         }else {
           console.log(result);
         }
