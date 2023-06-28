@@ -4,7 +4,9 @@ Este é um projeto de To-Do List desenvolvido em PHP, MySQL e JavaScript. O obje
 
 # Meu Projeto
 
-Clique <a href="https://todo-list-renanstorrer.000webhostapp.com/" target="_blank">aqui</a> para acessar o projeto.
+Clique [aqui](https://todo-list-renanstorrer.000webhostapp.com/) para acessar o projeto.
+
+*Para abrir o link em uma nova guia ou janela, pressione "Ctrl" (ou "Cmd" no Mac) + clique no link.*
 
 ![todolist](imagens/todolist.png)
 [![HTML](https://img.shields.io/badge/-HTML-orange)](#)
